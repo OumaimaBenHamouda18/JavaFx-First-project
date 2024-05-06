@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="200" prefWidth="300" style="-fx-background-color: #212A31;" styleClass="vbox" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto_fase5_omaima_benhamouda.QuizCulturaController">
+    <Label fx:id="textContentLabel" alignment="BASELINE_LEFT" nodeOrientation="LEFT_TO_RIGHT" styleClass="pregunta" stylesheets="@style.css">
+      <cursor>
+         <Cursor fx:constant="NONE" />
+      </cursor></Label>
+   <VBox alignment="BASELINE_LEFT" styleClass="group_opciones" stylesheets="@style.css">
+      <children>
+          <RadioButton fx:id="option1" selected="true" styleClass="opciones" stylesheets="@style.css" />
+          <RadioButton fx:id="option2" styleClass="opciones" stylesheets="@style.css" />
+          <RadioButton fx:id="option3" styleClass="opciones" stylesheets="@style.css" />
+      </children>
+   </VBox>
+    <Label fx:id="resultadoPregunta" alignment="CENTER" focusTraversable="false" styleClass="resultado_quiz" stylesheets="@style.css" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font size="14.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="NONE" />
+      </cursor></Label>
+   <HBox alignment="CENTER" styleClass="hbox, btns" stylesheets="@style.css">
+      <children>
+          <Button fx:id="siguientePreguntaBtn" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" onAction="#onNextButtonClick" prefHeight="28.0" prefWidth="87.0" styleClass="botones" stylesheets="@style.css" text="Next" />
+          <Button fx:id="resultadoJuegoBtn" alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" onAction="#onResultadoButtonClick" prefHeight="28.0" prefWidth="80.0" styleClass="botones" stylesheets="@style.css" text="Resultado" />
+      </children>
+   </HBox>
+    <Label fx:id="resultadoFinalLabel" focusTraversable="false" styleClass="resultado_quiz" stylesheets="@style.css" />
+    <HBox styleClass="hbox" stylesheets="@style.css">
+        <children>
+
+            <Button fx:id="reload" onAction="#onReloadClick" styleClass="flechaVolver" stylesheets="@style.css" />
+            <Button fx:id="menu" onAction="#onMenuClick" styleClass="flechaVolver" stylesheets="@style.css" textFill="WHITE" />
+            <Button fx:id="exit" onAction="#onExitClick" styleClass="flechaVolver" stylesheets="@style.css" textFill="WHITE" />
+
+        </children>
+    </HBox>
+</VBox>

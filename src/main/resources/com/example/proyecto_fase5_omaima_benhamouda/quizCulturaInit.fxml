@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="320.0" style="-fx-background-color: #212A31;" styleClass="vbox" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto_fase5_omaima_benhamouda.QuizCulturaInitController">
+   <HBox alignment="CENTER" styleClass="hbox" stylesheets="@style.css">
+      <children>
+
+          <Label fx:id="descripcionJuego" alignment="TOP_LEFT" styleClass="descripcion_juego" stylesheets="@style.css" textFill="WHITE" />
+          <ImageView fx:id="jugador" fitHeight="100" fitWidth="100" pickOnBounds="true" preserveRatio="true" smooth="true" />
+
+
+      </children>
+   </HBox>
+
+
+    <TextField fx:id="nombreJugador" focusTraversable="false" maxWidth="200.0" minWidth="59.0" prefHeight="28.0" prefWidth="139.0" promptText="Nombre" style="-fx-pref-width: 100; -fx-max-width: 300;" styleClass="textfield" stylesheets="@style.css">
+      <cursor>
+         <Cursor fx:constant="NONE" />
+      </cursor></TextField>
+    <Label fx:id="errorNombre" styleClass="error" stylesheets="@style.css" />
+    <TextField fx:id="edadJugador" focusTraversable="false" minWidth="86.0" prefHeight="28.0" prefWidth="116.0" promptText="Edad" style="-fx-pref-width: 100; -fx-max-width: 300;" styleClass="textfield" stylesheets="@style.css">
+      <cursor>
+         <Cursor fx:constant="NONE" />
+      </cursor></TextField>
+    <Label fx:id="errorEdad" styleClass="error" stylesheets="@style.css" />
+   <HBox alignment="CENTER" styleClass="hbox" stylesheets="@style.css">
+      <children>
+      
+          <Button fx:id="flechaBtn" onAction="#onFlechaClick" styleClass="flechaVolver" stylesheets="@style.css">
+
+    </Button>
+          <Button fx:id="startJuego" onAction="#onStartButtonClick" styleClass="botones" stylesheets="@style.css" text="Start" textFill="WHITE" />
+      </children>
+   </HBox>
+
+    <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+
+
+</VBox>

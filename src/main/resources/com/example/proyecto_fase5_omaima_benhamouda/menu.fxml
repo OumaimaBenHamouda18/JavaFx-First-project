@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #212A31;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto_fase5_omaima_benhamouda.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+
+
+        <Label layoutX="100" layoutY="38.0" text="Menu Juegos" textFill="#f2f1fc" textOverrun="CENTER_WORD_ELLIPSIS">
+            <font>
+                <Font name="Candara Bold" size="42.0" />
+            </font>
+        </Label>
+        <Button fx:id="quizCulturaBtn" lineSpacing="3.0" onAction="#onQuizCulturaButtonClick" prefHeight="26.0" prefWidth="236.0" styleClass="menuOption" stylesheets="@style.css" text="Quiz Cultura" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <font>
+         <Font size="11.0" />
+      </font>
+   </Button>
+        <Button fx:id="quizMathBtn" lineSpacing="3.0" onAction="#onQuizMathButtonClick" prefHeight="26.0" prefWidth="476.0" styleClass="menuOption" stylesheets="@style.css" text="Quiz Math" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <font>
+         <Font size="11.0" />
+      </font>
+   </Button>
+        <Button fx:id="quizAdivinanzaBtn" lineSpacing="3.0" onAction="#onAdivinanzaButtonClick" prefHeight="26.0" prefWidth="476.0" styleClass="menuOption" stylesheets="@style.css" text="Adivinanza" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <font>
+         <Font size="11.0" />
+      </font>
+   </Button>
+        <Button fx:id="historialJuegosBtn" lineSpacing="3.0" onAction="#onHistorialJuegosButtonClick" prefHeight="26.0" prefWidth="476.0" styleClass="menuOption" stylesheets="@style.css" text="Historial Juegos" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <font>
+         <Font size="11.0" />
+      </font>
+   </Button>
+        <Button lineSpacing="3.0" onAction="#onExitButtonClick" prefHeight="26.0" prefWidth="476.0" styleClass="menuOption,exitBtn" stylesheets="@style.css" text="Exit" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <font>
+         <Font size="11.0" />
+      </font>
+        </Button>
+
+</VBox>

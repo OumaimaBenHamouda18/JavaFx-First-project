@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="324.0" prefWidth="425.0" styleClass="vbox" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto_fase5_omaima_benhamouda.JuegoAdivinanzaController">
+   <children>
+      <HBox styleClass="hbox" stylesheets="@style.css">
+         <children>
+
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="A" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="B" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="C" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="D" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="E" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="F" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="G" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="H" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="I" />
+         </children>
+      </HBox>
+      <HBox styleClass="hbox" stylesheets="@style.css">
+         <children>
+
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="J" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="K" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="L" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="M" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="N" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="Ñ" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="O" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="P" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="Q" />
+         </children>
+      </HBox>
+      <HBox styleClass="hbox" stylesheets="@style.css">
+         <children>
+
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="R" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="S" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="T" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="U" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="V" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="W" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="X" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="Y" />
+             <Button onAction="#onLetraClick" styleClass="letra" stylesheets="@style.css" text="Z" />
+         </children>
+      </HBox>
+
+   </children>
+   <Label fx:id="letraAdivinadas" style="-fx-font-size: 20px; -fx-padding: 20px; -fx-text-fill: white;" />
+
+    <ImageView fx:id="felicidades" fitHeight="200" fitWidth="200" pickOnBounds="true" preserveRatio="true" smooth="true" />
+    <HBox alignment="CENTER" styleClass="hbox" stylesheets="@style.css">
+        <children>
+
+            <Button fx:id="reload" onAction="#onReloadClick" styleClass="flechaVolver" stylesheets="@style.css" />
+            <Button fx:id="menu" onAction="#onMenuClick" styleClass="flechaVolver" stylesheets="@style.css" textFill="WHITE" />
+            <Button fx:id="exit" onAction="#onExitClick" styleClass="flechaVolver" stylesheets="@style.css" textFill="WHITE" />
+
+        </children>
+    </HBox>
+</VBox>

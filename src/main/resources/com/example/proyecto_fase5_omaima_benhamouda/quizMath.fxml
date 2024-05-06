@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="200" prefWidth="300" styleClass="vbox" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto_fase5_omaima_benhamouda.QuizMathController">
+    <Label fx:id="textContentLabel" styleClass="pregunta" stylesheets="@style.css" />
+   <VBox alignment="BASELINE_LEFT" prefHeight="62.0" prefWidth="277.0" styleClass="group_opciones" stylesheets="@style.css">
+      <children>
+          <RadioButton fx:id="option1" selected="true" styleClass="opciones" stylesheets="@style.css" />
+          <RadioButton fx:id="option2" styleClass="opciones" stylesheets="@style.css" />
+          <RadioButton fx:id="option3" styleClass="opciones" stylesheets="@style.css" />
+      </children>
+   </VBox>
+    <Label fx:id="resultadoPregunta" styleClass="resultado_quiz" />
+   <HBox alignment="CENTER" styleClass="hbox" stylesheets="@style.css">
+      <children>
+          <Button fx:id="siguientePreguntaBtn" onAction="#onNextButtonClick" styleClass="botones" stylesheets="@style.css" text="Next" />
+          <Button fx:id="resultadoJuegoBtn" onAction="#onResultadoButtonClick" styleClass="botones" stylesheets="@style.css" text="Resultado" />
+      </children>
+   </HBox>
+    <Label fx:id="resultadoFinalLabel" styleClass="resultado_quiz" focusTraversable="false" stylesheets="@style.css" />
+    
+    <HBox styleClass="hbox" stylesheets="@style.css">
+        <children>
+
+            <Button fx:id="reload" onAction="#onReloadClick" styleClass="flechaVolver" stylesheets="@style.css" />
+            <Button fx:id="menu" onAction="#onMenuClick" styleClass="flechaVolver" stylesheets="@style.css" textFill="WHITE" />
+            <Button fx:id="exit" onAction="#onExitClick" styleClass="flechaVolver" stylesheets="@style.css" textFill="WHITE" />
+
+        </children>
+    </HBox>
+</VBox>

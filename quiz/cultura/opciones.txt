@@ -1,0 +1,10 @@
+Zazú,Timón,Rafiki
+Júpiter,Marte,Saturno
+Pablo Picasso,Vincent van Gogh,Leonardo da Vinci
+León,Gorila,Elefante
+Pekín,Tokio,Seúl
+Aguacate,Mango,Tomate
+Egipto,México,Grecia
+J.R.R. Tolkien,J.K. Rowling,George R.R. Martin
+Wa,H2O,O2
+Blanca Nieves,Elsa,Bella

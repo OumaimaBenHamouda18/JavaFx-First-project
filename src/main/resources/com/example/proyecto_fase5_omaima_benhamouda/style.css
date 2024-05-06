@@ -1,0 +1,212 @@
+.vbox,hbox{
+      -fx-spacing: 10px;
+       -fx-alignment: center;
+       -fx-background-color: #212A31;
+}
+
+.menuOption{
+    -fx-pref-width:350;
+    -fx-background-color: transparent; /* Color de fondo del botón */
+    -fx-background-radius: 10px; /* Radio del fondo del botón */
+    -fx-text-fill: #ffffff; /* Color del texto del botón */
+    -fx-font-size: 16px; /* Tamaño de la fuente del texto del botón */
+    -fx-padding: 10px; /* Relleno interno del botón */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 0); /* Sombra del botón */
+    -fx-cursor: hand; /* Cambia el cursor al pasar por encima del botón */
+    -fx-background-insets: 0, 10, 10, 10; /* Define los bordes del botón */
+    -fx-background-radius: 10px 110px 110px 10px; /* Define los radios de los bordes del botón */
+    -fx-background-color: linear-gradient(#FFA500, #0074), linear-gradient(#0074, #0074), linear-gradient(#0074, black), linear-gradient(transparent, #fffd0f); /* Define el gradiente de color del botón */
+    -fx-background-repeat: no-repeat; /* Define si el gradiente de color se repite o no */
+    -fx-background-size: 10px 110px, 10px 110px, 10px 110px, 10px 110px; /* Define el tamaño del gradiente de color del botón */
+    -fx-background-origin: border, border, border, border; /* Define el origen del gradiente de color del botón */
+    -fx-background-clip: padding, padding, padding, padding;
+}
+
+.menuOption:hover {
+
+   -fx-background-color: #2C353E;/* Define el color de fondo al pasar el cursor por encima del botón */
+}
+
+.exitBtn{
+    -fx-background-color: linear-gradient(#FFA500, #0074), linear-gradient(#0074, #0074), linear-gradient(#0074, black), linear-gradient(transparent, red); /* Define el gradiente de color del botón */
+}
+
+.descripcion_juego{
+
+        -fx-padding: 20px; /* Padding */
+        -fx-text-fill:white; /* Text color */
+        -fx-font-weight: bold;
+        -fx-font-size: 14px; /* Tamaño de fuente */
+        -fx-line-spacing: 5px; /* Espacio entre líneas */
+
+}
+.textfield{
+
+    -fx-pref-width: 100px; /* Preferred width */
+    -fx-max-width:300px;
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-border-color: #cccccc; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-padding: 10px; /* Padding */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: Arial, sans-serif; /* Font family */
+    -fx-text-fill: white; /* Text color */
+    -fx-focus-traversable: false;
+    }
+
+ .resultado_quiz{
+        -fx-padding: 10px;
+        -fx-text-fill:white; /* Text color */
+        -fx-font-weight: bold;
+        -fx-font-size: 14px; /* Tamaño de fuente */
+}
+
+.textfield:focused {
+    -fx-border-color: white; /* Border color when focused */
+    -fx-border-width: 2px; /* Border width when focused */
+}
+
+.hbox {
+-fx-spacing: 10px;
+    -fx-alignment: center; /* Center alignment */
+}
+
+.hbox > .botones{
+
+    -fx-pref-width: 100px; /* Preferred width */
+    -fx-background-color: #FFA500; /* Transparent background */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: Arial, sans-serif; /* Font family */
+    -fx-text-fill: white; /* Text color */
+}
+
+ .botones:hover{
+ -fx-background-color: transparente; /* Color de fondo al pasar el ratón */
+   -fx-cursor: hand; /* Cambiar el cursor al estilo de la mano */
+       -fx-border-color: #FFA500; /* Border color */
+ }
+
+.group_opciones{
+    -fx-padding: 0 10 10 280; /* Relleno del HBox */
+    -fx-spacing: 10; /* Espacio entre los nodos del HBox */
+
+    }
+.group_opciones > .opciones{
+
+          -fx-padding: 20px; /* Padding */
+          -fx-font-size: 14px; /* Font size */
+          -fx-font-family: Arial, sans-serif; /* Font family */
+          -fx-text-fill: white; /* Text color */
+          -fx-margin-right: 100px; /* Espacio entre los botones */
+          -fx-focus-traversable: false;
+}
+
+.group_opciones > .opciones .dot {
+    -fx-mark-color: #FFA500 ;
+}
+
+.vbox > .error{
+    -fx-padding: 7px; /* Padding */
+    -fx-font-size: 10px; /* Font size */
+    -fx-alignment: baseline-left;
+}
+
+.pregunta{
+
+        -fx-padding: 10 10 0 0; /* Relleno del HBox */
+        -fx-text-fill:white; /* Text color */
+        -fx-font-weight: bold;
+        -fx-font-size: 14px; /* Tamaño de fuente */
+        -fx-line-spacing: 5px; /* Espacio entre líneas */
+
+}
+
+/* tableview.css */
+
+.table-row-cell{
+     -fx-background-color: #212A31; /* Cambia el color de fondo de las filas impares */
+     -fx-text-fill: white;
+     -fx-border-color: #F0F0F0;
+     -fx-border-width: 0.3px;
+
+}
+.table-row-cell:hover {
+    -fx-background-color: rgba(173, 216, 230, 0.2); /* Cambia el color de fondo de las filas seleccionadas */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white; /* Cambia el color del texto de los encabezados de columna */
+}
+
+.table-row-cell:empty {
+    -fx-background-color: #212A31;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+
+}
+
+.table-view {
+    -fx-pref-width: 600px;
+    -fx-max-width: 600px;
+    -fx-min-width: 600px;
+
+    -fx-pref-height: 300px;
+    -fx-max-height: 300px;
+    -fx-min-height:300px;
+
+    -fx-background-color:  #212A31; /* Cambia el color de fondo de la TableView */
+    -fx-border-color: #F0F0F0;
+    -fx-border-width: 0.3px;
+
+    -fx-text-fill: white;
+    -fx-focus-traversable: false;
+}
+
+.table-column {
+    -fx-font-family: "Verdana";
+    -fx-pref-width: 210px; /* Ancho preferido de la columna */
+    -fx-text-fill: white;
+    -fx-border-color: #F0F0F0;
+    -fx-border-width: 0.3px;
+    -fx-padding: 15px; /* Padding */
+}
+
+.table-view .column-header {
+    -fx-font-weight: bold;
+    -fx-background-color: #FFA500; /* Cambia el color de fondo de los encabezados de columna */
+    -fx-text-fill: white;
+    /* Agrega estilos adicionales */
+    -fx-padding: 20; /* Agrega padding a los encabezados de columna */
+    -fx-border-width: 1px; /* Agrega un borde alrededor de los encabezados de columna */
+    -fx-font-size: 12px; /* Cambia el tamaño de la fuente */
+    -fx-font-family: "Arial", sans-serif; /* Cambia la fuente */
+    -fx-background-radius: 5px; /* Agrega un radio de esquinas redondeadas al fondo */
+}
+
+.flechaVolver{
+ -fx-background-color:transparent;
+ -fx-cursor: HAND;
+}
+
+/**************************Adivinanza*******************************/
+.letra{
+   -fx-pref-width: 30px; /* Preferred width */
+
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: Arial, sans-serif; /* Font family */
+    -fx-text-fill: white; /* Text color */
+    -fx-border-color: #FFA500; /* Border color when focused */
+    -fx-background-color: transparent; /* Transparent background */
+}
+.letra:hover {
+    -fx-background-color: #FFA500; /* Transparent background */
+    -fx-border-width: 2px; /* Border width when focused */
+    -fx-cursor: HAND;
+}
